@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #800000;
+  padding: 5vw;
+  font-size: 2vw;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 5vw;
+  border-bottom: 3px dotted rgba(0,0,0,0.5);
+  margin-bottom: 5vw;
+}
+
+#nav>a, #nav>a:visited {
+  color: #ffff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#nav>a:hover {
+  background-color: #000;
+  color: #ffff;
+  border-radius: 15px;
+}
+
+h2 {
+  color: #ffff;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 75px;
+  text-shadow: 3px 3px #000000;
+}
+
+h2#pageTitle {
+  margin-bottom: 5vw;
+}
+
+#outputGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5vw;
+}
+
+#outputGrid>a, #outputGrid>a:visited {
+  color: #000;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 1.25vw;
+  transition: background-color 0.25s;
+  border-radius: 3px;
+  opacity: 0.8;
+}
+
+#outputGrid>a:hover {
+  background-color: #ffff;
+  opacity: 1.0;
+}
+
+.previewTitle {
+  font-weight: bold;
+  margin-bottom: 1.25vw;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 3px;
+  display: flex;
+}
+
+.projectHeroImage {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  margin-bottom: 2.5vw;
+  border-radius: 6px;
+  display: flex;
+}
+
+.description {
+  line-height: 2em;
+}
